@@ -5,6 +5,8 @@ ruby '3.0.3'
 
 gem "grade_runner", github: "firstdraft/grade_runner"
 
+gem "draft_generators", :github => "firstdraft/draft_generators"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use postgresql as the database for Active Record
@@ -52,7 +54,13 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'webmock'
+  gem 'rspec-html-matchers'
 end
+
+gem "carrierwave"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
